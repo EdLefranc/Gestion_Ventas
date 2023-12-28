@@ -9,6 +9,6 @@ package Entidades;
  *
  * @author Ed Le Franc
  */
-public class Elaborado {
+public class Receta {
     
 }
