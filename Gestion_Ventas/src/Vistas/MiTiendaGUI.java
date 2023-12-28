@@ -2,7 +2,6 @@ package Vistas;
 
 import com.formdev.flatlaf.intellijthemes.FlatCarbonIJTheme;
 import com.formdev.flatlaf.intellijthemes.FlatSolarizedLightIJTheme;
-import java.awt.Color;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
@@ -209,15 +208,13 @@ public class MiTiendaGUI extends javax.swing.JFrame {
     private void MI_AlmacenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MI_AlmacenActionPerformed
         JP_Main.removeAll();
         JP_Main.repaint();
-        StockGUI pg = new StockGUI();
-        pg.setLocation((JP_Main.getWidth() - pg.getWidth()) / 2, (JP_Main.getHeight() - pg.getHeight()) / 2);
-        pg.setVisible(true);
-        JP_Main.add(pg);
-        JP_Main.moveToFront(pg);
-        pg.setMaximizable(true);
-        pg.setClosable(true);
-//        pg.accionIFPaciente();
-//        BTN_DarBajaAltaPac.setEnabled(false);
+        StockGUI sg = new StockGUI();
+        sg.setLocation((JP_Main.getWidth() - sg.getWidth()) / 2, (JP_Main.getHeight() - sg.getHeight()) / 2);
+        sg.setVisible(true);
+        JP_Main.add(sg);
+        JP_Main.moveToFront(sg);
+        sg.setMaximizable(true);
+        sg.setClosable(true);
     }//GEN-LAST:event_MI_AlmacenActionPerformed
 
     private void MI_ElabActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MI_ElabActionPerformed

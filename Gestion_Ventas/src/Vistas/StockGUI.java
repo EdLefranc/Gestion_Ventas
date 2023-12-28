@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Vistas;
 
 /**
@@ -28,16 +23,49 @@ public class StockGUI extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jlbStockTitle = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jlbStockTitle.setFont(new java.awt.Font("Adobe Devanagari", 1, 24)); // NOI18N
+        jlbStockTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jlbStockTitle.setText("STOCK PRODUCTOS");
+        getContentPane().add(jlbStockTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 30, 430, 50));
+
+        jComboBox1.setFont(new java.awt.Font("DejaVu Sans", 1, 14)); // NOI18N
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Materias Primas", "Producción", "Insumos", " " }));
+        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 150, 500, -1));
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable1);
+
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 210, 750, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
     
-    public void ocultarConsultasFrame() {
+    public void ocultarStockFrame() {
         this.setVisible(false);
     }
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable1;
+    private javax.swing.JLabel jlbStockTitle;
     // End of variables declaration//GEN-END:variables
 }
